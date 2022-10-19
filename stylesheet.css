@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 25vh;
+    width: 100%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(229, 224, 224);
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #777;
+    transition: .3s;
+}
+
+.logo {
+    color: black;
+    font-size: 70px;
+    font-family: 'Tangerine', cursive;
+}
+
+span {
+    color: red;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.article {
+    max-width: 800px;
+    margin: auto;
+}
+
+H1,
+H2,
+H3,
+H4,
+H5,
+H6 {
+    text-align: center;
+}
+
+H1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+H2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+    letter-spacing: 3px;
+}
+
+H3 {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.address-table {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#contact-page {
+    background-color: #fbfafa;
+    font-family: sans-serif;
+}
+
+.contact-box {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgb(236, 234, 234);
+    top: 25%;
+    left: 25%;
+    transform: translate (%, %);
+    position: absolute;
+}
+
+form {
+    margin: 35px;
+    position: ;
+}
+
+.input-field {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+}
+
+.textarea-field {
+    width: 400px;
+    height: 150px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+}
+
+.submit-button {
+    background-color: grey;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    width: 80px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    opacity: 0.7;
+}
+
+.submit-button:active {}
