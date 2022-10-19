@@ -19,7 +19,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px ;
+    padding: 10px;
 }
 
 nav ul li {
@@ -156,3 +156,20 @@ form {
 }
 
 .submit-button:active {}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+    height: ;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.main-grid H2 {
+    color: black;
+}
+
+.column {
+    background-color: lightgoldenrodyellow;
+}
