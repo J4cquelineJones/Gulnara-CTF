@@ -19,8 +19,13 @@
 
 <body>
     <header>
-        <H2 class="logo">Discover <span>Baku</span></H2>
-        <nav>
+        <H2 class="logo" aria-label="logo"> Discover <span>Baku</span></H2>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navbar">
             <ul class="social-media">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
@@ -28,27 +33,37 @@
                 <li><a href="#"><i class="fa fa-youtube"></i></a></li>
             </ul>
             <ul class="nav-bar">
-                <li><a href="home.html"> Home </a></li>
+                <li class="active"> <a href="home.html"> Home </a></li>
                 <li><a href="blog.html"> Blog </a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html"> About </a></li>
                 <li><a href="contact.html"> Contact </a> </li>
             </ul>
             <form class="search-box">
-                <input type="search" placeholder="Search">
-                <button type="submit"><i class="fa fa-search" id="search"></i></button>
+                <input type="search" placeholder="Search" id="srch">
+                <button type="submit" id="search"><i class="fa fa-search"></i></button>
             </form>
         </nav>
     </header>
 
-    <!-- GRID-->
-    <div class="main-grid" style="">
-        <div class="column"><img src="images/Club.jpg" width="480px"><H2>Nightlife</H2></div>
-        <div class="column"><img src="images/Shopping-03.jpg" width="480px"><H2>Shopping</H2></div>
-        <div class="column"><img src="images/Museum.jpg" width="480px"><H2>Museums & Galleries</H2></div>
-        <div class="column"><img src="images/Cafe.jpg" width="480px"><H2>Cafe & Restaurants</H2></div>
-        <div class="column"><img src="images/Atraction-01.jpeg" width="480px"><H2>Atractions</H2></div>
-        <div class="column"><img src="images/Azdrama.jpg" width="480px"><H2>Theatres & Cinemas</H2></div>
+    <!-- GRID -->
+    <div class="main-grid" aria-label="categories">
+        <div class="column"><a href="#"><img src="images/Club.jpg" width="" alt="club"><H2> Nightlife </H2></a></div>
+        <div class="column"><a href="#"><img src="images/Shopping-03.jpg" width="" alt="shopping center"><H2> Shopping </H2></a></div>
+        <div class="column"><a href="#"><img src="images/Museum.jpg" width="" alt="museum"><H2> Museums & Galleries </H2></a></div>
+        <div class="column"><a href="#"><img src="images/Cafe.jpg" width="" alt="cafe"><H2> Cafe & Restaurants </H2></a></div>
+        <div class="column"><a href="#"><img src="images/Atraction-01.jpeg" width="" alt="ferris wheel"><H2> Atractions </H2></a></div>
+        <div class="column"><a href="#"><img src="images/Azdrama.jpg" width="" alt="theatre"><H2> Theatres & Cinemas </H2></a></div>
     </div>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar')[0]
+
+        toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+        })
+    </script> 
+
 </body>
 
 </html>
